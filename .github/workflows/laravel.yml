@@ -15,7 +15,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         password: ${{ secrets.SSH_PASSWORD }}
         script: |
-                cd /home/ubuntu/opt/laravel/kotak
+                cd /opt/laravel/kotak
                 git pull
                 php artisan cache:clear
                 php artisan config:clear
